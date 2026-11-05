@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Solution of Edtech helps educational brands grow through content, social media management and creative digital strategies.">
+  <title>Solution of Edtech | Growth for Education Brands</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#070a08;--panel:#101612;--panel2:#141d17;--green:#38c900;--green2:#8df05f;--white:#f5f8f5;--muted:#a8b2aa;--line:rgba(255,255,255,.11)}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:"DM Sans",sans-serif;background:var(--bg);color:var(--white);line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+    .nav{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+    .brand{display:flex;align-items:center;gap:12px;font-family:Manrope,sans-serif;font-weight:800;letter-spacing:-.5px}
+    .brand img{width:54px;height:54px;object-fit:contain}
+    .brand span{font-size:15px;line-height:1.1}.brand b{color:var(--green)}
+    .links{display:flex;align-items:center;gap:28px;color:#d4ddd5;font-size:13px}
+    .links a:hover{color:var(--green2)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;border-radius:7px;background:var(--green);color:#061004;font-weight:800;font-size:13px;transition:.2s}
+    .btn:hover{background:var(--green2);transform:translateY(-2px)}
+    .btn.outline{background:transparent;color:var(--white);border:1px solid var(--line)}
+    .hero{padding:100px 0 90px;display:grid;grid-template-columns:1.12fr .88fr;gap:55px;align-items:center;min-height:610px}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--green2);font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
+    .dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 16px var(--green)}
+    h1,h2,h3{font-family:Manrope,sans-serif;line-height:1.12;letter-spacing:-1.5px}
+    h1{font-size:clamp(42px,6vw,76px);font-weight:800;margin:22px 0}
+    h1 em{font-style:normal;color:var(--green)}
+    .lead{max-width:570px;color:var(--muted);font-size:16px;line-height:1.85}
+    .actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
+    .hero-card{position:relative;background:linear-gradient(145deg,#142018,#0b100d);border:1px solid rgba(91,220,53,.24);border-radius:18px;padding:28px;min-height:370px;overflow:hidden}
+    .hero-card:before{content:"";position:absolute;width:260px;height:260px;border-radius:50%;background:rgba(56,201,0,.13);filter:blur(50px);right:-65px;top:-60px}
+    .card-top{display:flex;justify-content:space-between;color:var(--muted);font-size:11px;letter-spacing:1px;text-transform:uppercase;position:relative}
+    .growth{position:relative;margin-top:50px}
+    .growth strong{font:800 54px Manrope,sans-serif;display:block;letter-spacing:-3px}
+    .growth strong span{color:var(--green)}
+    .growth p{color:var(--muted);font-size:13px;margin-top:5px}
+    .bars{height:105px;display:flex;align-items:end;gap:10px;margin-top:34px;border-bottom:1px solid var(--line);padding:0 4px}
+    .bars i{display:block;flex:1;background:linear-gradient(0deg,#239400,var(--green2));border-radius:5px 5px 0 0;opacity:.9}
+    .bars i:nth-child(1){height:25%}.bars i:nth-child(2){height:39%}.bars i:nth-child(3){height:32%}.bars i:nth-child(4){height:57%}.bars i:nth-child(5){height:48%}.bars i:nth-child(6){height:76%}.bars i:nth-child(7){height:100%}
+    .card-foot{display:flex;justify-content:space-between;color:var(--muted);font-size:11px;margin-top:12px}
+    section{padding:85px 0}
+    .section-head{max-width:650px;margin-bottom:38px}
+    .section-head h2{font-size:clamp(31px,4vw,48px);margin:15px 0}
+    .section-head p{color:var(--muted);font-size:14px}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .service{background:var(--panel);border:1px solid var(--line);padding:28px;border-radius:12px;min-height:220px;transition:.25s}
+    .service:hover{border-color:rgba(56,201,0,.55);transform:translateY(-4px)}
+    .icon{width:42px;height:42px;border-radius:10px;background:rgba(56,201,0,.12);color:var(--green2);display:grid;place-items:center;font-size:20px;margin-bottom:23px}
+    .service h3{font-size:19px;letter-spacing:-.5px;margin-bottom:11px}
+    .service p,.about p,.project p{font-size:13px;color:var(--muted);line-height:1.8}
+    .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:65px;align-items:center}
+    .about-mark{border:1px solid var(--line);border-radius:16px;background:radial-gradient(circle at 50% 45%,rgba(56,201,0,.14),transparent 58%),var(--panel);padding:34px;display:grid;place-items:center;min-height:300px}
+    .about-mark img{width:min(100%,390px);height:auto;object-fit:contain}
+    .about h2{font-size:clamp(32px,4vw,47px);margin:15px 0 20px}
+    .about p+p{margin-top:13px}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}
+    .stat{border-left:2px solid var(--green);padding-left:13px}
+    .stat strong{font:800 22px Manrope;display:block}.stat span{font-size:11px;color:var(--muted)}
+    .work{background:#0b100d}
+    .projects{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .project{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:27px;min-height:190px}
+    .project small{color:var(--green2);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;font-weight:800}
+    .project h3{font-size:23px;margin:14px 0 10px}
+    .project .tag{display:inline-block;border:1px solid var(--line);border-radius:30px;padding:5px 10px;color:#c8d2ca;font-size:10px;margin:17px 6px 0 0}
+    .why{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .why div{padding:20px 17px;border-top:1px solid var(--green);background:linear-gradient(180deg,rgba(56,201,0,.07),transparent)}
+    .why b{font:700 15px Manrope;display:block;margin-bottom:8px}.why span{font-size:12px;color:var(--muted)}
+    .cta{padding:60px 30px;text-align:center;border:1px solid rgba(56,201,0,.28);border-radius:16px;background:radial-gradient(ellipse at top,rgba(56,201,0,.13),transparent 65%),var(--panel)}
+    .cta h2{font-size:clamp(32px,4vw,48px);max-width:700px;margin:15px auto}
+    .cta p{color:var(--muted);font-size:14px}
+    footer{padding:30px 0;border-top:1px solid var(--line);color:var(--muted);font-size:11px}
+    .footer-row{display:flex;justify-content:space-between;gap:20px;align-items:center}
+    @media(max-width:800px){.links{display:none}.hero{grid-template-columns:1fr;padding:70px 0;gap:35px}.hero-card{min-height:320px}.services{grid-template-columns:1fr 1fr}.about-grid{grid-template-columns:1fr;gap:30px}.why{grid-template-columns:1fr 1fr}}
+    @media(max-width:520px){.wrap{width:min(100% - 30px,1160px)}.nav{height:70px}.brand img{width:45px;height:45px}.hero{padding:58px 0}.hero-card{padding:22px}.services,.projects{grid-template-columns:1fr}.stats{gap:8px}.stat strong{font-size:19px}section{padding:65px 0}.footer-row{align-items:flex-start;flex-direction:column}}
+  </style>
+</head>
+<body>
+  <header class="wrap nav">
+    <a class="brand" href="#home"><img src="assets/logo.png" alt="Solution of Edtech logo"><span>SOLUTION<br><b>OF EDTECH</b></span></a>
+    <nav class="links"><a href="#services">Services</a><a href="#about">About</a><a href="#work">Our Work</a><a href="#contact">Contact</a></nav>
+    <a class="btn" href="mailto:solutionofedtech@gmail.com">Let's Talk ↗</a>
+  </header>
+
+  <main>
+    <div class="wrap hero" id="home">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> DIGITAL GROWTH PARTNER FOR EDUCATION</div>
+        <h1>We turn educational brands into <em>growth stories.</em></h1>
+        <p class="lead">Strategic content, creative storytelling and social media management to help education brands reach more students and build stronger communities.</p>
+        <div class="actions"><a class="btn" href="#contact">Start a Project ↗</a><a class="btn outline" href="#work">Explore Our Work</a></div>
+      </div>
+      <div class="hero-card">
+        <div class="card-top"><span>Growth mindset</span><span>01 / 04</span></div>
+        <div class="growth"><strong>Ideas<span>.</span><br>Content<span>.</span> Impact<span>.</span></strong><p>Creative execution. Meaningful connection. Measurable progress.</p></div>
+        <div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="card-foot"><span>CREATE WITH PURPOSE</span><span>GROW WITH STRATEGY</span></div>
+      </div>
+    </div>
+
+    <section class="wrap" id="services">
+      <div class="section-head"><div class="eyebrow">WHAT WE DO</div><h2>Everything your education brand needs to grow.</h2><p>From planning to publishing, we build content systems that make your brand more visible, valuable and memorable.</p></div>
+      <div class="services">
+        <article class="service"><div class="icon">✦</div><h3>Social Media Management</h3><p>Platform strategy, content calendars, publishing and community management that keep your brand active and consistent.</p></article>
+        <article class="service"><div class="icon">▣</div><h3>Content Creation</h3><p>Short-form videos, educational micro-content and creative assets designed to capture attention and deliver value.</p></article>
+        <article class="service"><div class="icon">▶</div><h3>Video Editing</h3><p>Turn existing classes and long-form footage into engaging videos made for today's digital platforms.</p></article>
+        <article class="service"><div class="icon">↗</div><h3>Content Strategy</h3><p>Clear content direction, audience-focused ideas and practical plans aligned with your brand goals.</p></article>
+        <article class="service"><div class="icon">✧</div><h3>Creative Design</h3><p>Professional thumbnails, campaign creatives and branded visuals that make every message stand out.</p></article>
+        <article class="service"><div class="icon">◎</div><h3>Brand Growth</h3><p>Build trust, strengthen your online identity and create meaningful connections with your student community.</p></article>
+      </div>
+    </section>
+
+    <section class="wrap about" id="about">
+      <div class="about-grid">
+        <div class="about-mark"><img src="assets/logo.png" alt="Solution of Edtech brand logo"></div>
+        <div><div class="eyebrow">ABOUT SOLUTION OF EDTECH</div><h2>We understand education. We understand digital.</h2>
+          <p>Solution of Edtech is a creative digital partner focused on helping educational brands communicate better and grow online.</p>
+          <p>We bring together content, design and platform management to turn your existing knowledge and ideas into content that connects with learners.</p>
+          <div class="stats"><div class="stat"><strong>Strategy</strong><span>Purpose-led planning</span></div><div class="stat"><strong>Creative</strong><span>Content that connects</span></div><div class="stat"><strong>Growth</strong><span>Long-term thinking</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work" id="work"><div class="wrap">
+      <div class="section-head"><div class="eyebrow">SELECTED EXPERIENCE</div><h2>Work that speaks for itself.</h2><p>A snapshot of the kind of education-focused content and digital support we deliver.</p></div>
+      <div class="projects">
+        <article class="project"><small>EDUCATION BRAND · CONTENT</small><h3>ACS Future School</h3><p>Content and creative support for an education-focused digital brand. Add approved campaign visuals, deliverables and verified performance results here.</p><span class="tag">Micro-content</span><span class="tag">Creative Editing</span><span class="tag">Education</span></article>
+        <article class="project"><small>CASE STUDY · YOUR NEXT PROJECT</small><h3>Your brand could be next.</h3><p>Let's build a clear content strategy around your audience, goals and existing resources.</p><a class="btn" style="margin-top:18px" href="#contact">Discuss a project ↗</a></article>
+      </div>
+    </div></section>
+
+    <section class="wrap"><div class="section-head"><div class="eyebrow">WHY WORK WITH US</div><h2>A thoughtful partner for your next stage of growth.</h2></div>
+      <div class="why"><div><b>Education-first approach</b><span>We create with students, teachers and learning brands in mind.</span></div><div><b>Strategy meets creativity</b><span>Every creative decision has a purpose behind it.</span></div><div><b>Consistent execution</b><span>Reliable planning and a structured content workflow.</span></div><div><b>Built around your goals</b><span>Solutions shaped around your brand and audience.</span></div></div>
+    </section>
+
+    <section class="wrap" id="contact"><div class="cta"><div class="eyebrow">LET'S CREATE SOMETHING MEANINGFUL</div><h2>Ready to elevate your education brand?</h2><p>Tell us about your goals. Let's build a content strategy that delivers value.</p><div class="actions" style="justify-content:center"><a class="btn" href="mailto:solutionofedtech@gmail.com">Email Us ↗</a><a class="btn outline" href="https://www.facebook.com/" target="_blank" rel="noopener">Connect on Facebook</a></div></div></section>
+  </main>
+
+  <footer><div class="wrap footer-row"><span>© <span id="year"></span> Solution of Edtech. All rights reserved.</span><span>Built for education brands · Bangladesh</span></div></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
